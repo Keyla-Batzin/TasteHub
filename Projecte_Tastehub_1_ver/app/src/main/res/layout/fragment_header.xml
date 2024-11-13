@@ -6,10 +6,42 @@
     android:layout_height="match_parent"
     tools:context=".FragmentHeader">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <!-- Barra superior con los botones de gato y carrito -->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="66dp"
+        android:background="#FFBA59"
+        android:gravity="center|end"
+        android:orientation="horizontal">
+
+        <!-- Botón del Preferencias -->
+        <ImageButton
+            android:id="@+id/btn_preferencias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="140dp"
+            android:background="#00FFFFFF"
+            android:src=""/>
+
+        <!-- Botón del Logo -->
+        <ImageButton
+            android:id="@+id/btn_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="140dp"
+            android:background="#00FFFFFF"
+            android:src="" />
+
+        <!-- Botón del carrito favoritos -->
+        <ImageButton
+            android:id="@+id/btn_favoritos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:background="#00FFFFFF"
+            android:src="@drawable/favoritos"/>
+    </LinearLayout>
 
 </FrameLayout>
